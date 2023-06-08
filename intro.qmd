@@ -70,9 +70,9 @@ Writing objects: 100% (2/2), 176 bytes | 176.00 KiB/s, done.
 Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
 remote: 
 remote: Create a pull request for 'gh-pages' on GitHub by visiting:
-remote:      https://github.com/mjfrigaard/eRrata/pull/new/gh-pages
+remote:      https://github.com/mjfrigaard/data-tech/pull/new/gh-pages
 remote: 
-To github.com:mjfrigaard/eRrata.git
+To github.com:mjfrigaard/data-tech.git
  * [new branch]      gh-pages -> gh-pages
 ```
 
@@ -94,12 +94,12 @@ Your branch is up to date with 'origin/main'.
 #| echo: true
 #| code-fold: false
 $ quarto publish gh-pages
-? Update site at https://mjfrigaard.github.io/eRrata/? (Y/n) 
+? Update site at https://mjfrigaard.github.io/data-tech/? (Y/n) 
 ```
 
 ```{verbatim}
 #| eval: false
 #| echo: true
 #| code-fold: false
-? Update site at https://mjfrigaard.github.io/eRrata/? (Y/n) Yes
+? Update site at https://mjfrigaard.github.io/data-tech/? (Y/n) Yes
 ```

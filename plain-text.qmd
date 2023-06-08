@@ -1,0 +1,27 @@
+# Writing code {.unnumbered}
+
+'Code' is the language (grammar and syntax) you'll use to communicate with a computer. 
+
+## Machine readable
+
+In order to work, the machine (i.e. computer) must be able to execute the code you've written.
+
+## Human readable
+
+Code is always read by at least two people: you, and future you.
+
+## HTML
+
+Hypertext markup language 
+
+### Markdown
+
+## R 
+
+
+
+## Python
+
+
+
+## JavaScript

@@ -10,10 +10,18 @@ book:
   - index.qmd
   - preface.qmd
   - intro.qmd
+  - part: "Code"
+    chapters: 
+        - plain-text.qmd
+        - files.qmd
+        - command-line.qmd
+        - regex.qmd
+        - notebooks.qmd
   - part: "Object-oriented programming"
     chapters: 
         - oop-basics.qmd
         - oop-in-r.qmd
+        - oop-in-python.qmd
   - part: "Functions"
     chapters:
       - fun-names.qmd
