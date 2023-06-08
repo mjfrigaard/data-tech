@@ -1,0 +1,35 @@
+project:
+  type: book
+
+book:
+  title: "eRrata"
+  subtitle: "Special topics in R"
+  author: "Martin Frigaard"
+  date: "2023-06-07"
+  chapters:
+  - index.qmd
+  - preface.qmd
+  - intro.qmd
+  - part: "Object-oriented programming"
+    chapters: 
+        - oop-basics.qmd
+        - oop-in-r.qmd
+  - part: "Functions"
+    chapters:
+      - fun-names.qmd
+      - fun-arguments.qmd
+      - fun-structure.qmd
+      - fun-environments.qmd
+  
+
+bibliography: references.bib
+
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

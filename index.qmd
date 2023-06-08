@@ -1,0 +1,3 @@
+# Welcome to e`R`rata {.unnumbered}
+
+A useR's collection of errors, misunderstandings, and collisions with the R programming language.    

@@ -1,0 +1,11 @@
+# Preface {.unnumbered}
+
+This book is collection of topics from the R programming language. It's organized more like a journal than a textbook, and each topic is centered around a problem or error I've encountered while developing R packages, data visualizations, functions, and shiny applications. 
+
+Some of the topics I've considered adding to this book have been already been covered (with more style and depth) in either the [R inferno](https://www.burns-stat.com/pages/Tutor/R_inferno.pdf) or [What they forgot to teach you about R](https://rstats.wtf/). If there's any duplication of content, it's presence should only indicate this topic was especially difficult for me to grasp, even after consulting these resources (multiple times).
+
+
+
+This book was written in Quarto (learn more about [Quarto books](https://quarto.org/docs/books)).
+
+
