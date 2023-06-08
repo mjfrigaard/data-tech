@@ -2,8 +2,8 @@ project:
   type: book
 
 book:
-  title: "eRrata"
-  subtitle: "Special topics in R"
+  title: "Data Technologies"
+  subtitle: "Computational tools for working with data"
   author: "Martin Frigaard"
   date: "2023-06-07"
   chapters:

@@ -2,16 +2,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "eRrata",
+    "title": "Data Technologies",
     "section": "",
-    "text": "Welcome to eRrata\nA useR’s collection of errors, misunderstandings, and collisions with the R programming language."
+    "text": "Welcome!\nThis book describes the essential tools and techniques for working with data, especially those ‘behind-the-scenes’ tasks that will take considerable time and effort but don’t receive much attention."
   },
   {
     "objectID": "preface.html",
     "href": "preface.html",
     "title": "Preface",
     "section": "",
-    "text": "This book is collection of topics from the R programming language. It’s organized more like a journal than a textbook, and each topic is centered around a problem or error I’ve encountered while developing functions, data visualizations, R packages, and shiny applications.\nSome of the topics I’ve considered adding to this book have been already been covered (with more style and depth) in either the R inferno or What they forgot to teach you about R. If there’s any duplication of content, it’s presence should only indicate this topic was especially difficult for me to grasp, even after consulting these resources (multiple times).\nThis book was written in Quarto (learn more about Quarto books)."
+    "text": "This book is focused on computational tools for working with data. Data science is a rapidly evolving field, so in many ways, this text is an attempt to capture whatever ‘best practices’ can be codified or generalized.\nThe topics include coding languages, computational documents, data storage and file formats, version control systems, and general computer science topics.\nThis text emphasizes using tools that require typing code on a keyboard (rather than using a mouse to point and click).\nThis book was written in Quarto (learn more about Quarto books)."
   },
   {
     "objectID": "intro.html#publishing-this-book-meta",
@@ -25,6 +25,55 @@
     "href": "intro.html#using-git",
     "title": "Introduction",
     "section": "Using Git",
-    "text": "Using Git\nBasic knowledge of Git has become somewhat necessary when you decide to enter the R ecosystem (or other open-source projects). I won’t be diving into Git commands here, but I will cover what commands I used to store and publish this book.\n\nCreate a repository on GitHub.com like this one: mjfrigaard/eRrata\nAdd and commit the files in the book repo:\n\n$ git add -A\n$ git commit -m \"first commit\"\n\nPush the local repo to GitHub repo\n\n$ git remote add origin git@github.com:mjfrigaard/eRrata.git\n$ git branch -M main\n$ git push -u origin main\n\nCreate a gh-pages branch\n\n$ git checkout --orphan gh-pages\nSwitched to a new branch 'gh-pages'\n$ git reset --hard \n$ git commit --allow-empty -m \"Initialising gh-pages branch\"\nInitialising gh-pages branch\n$ git push origin gh-pages\nEnumerating objects: 2, done.\nCounting objects: 100% (2/2), done.\nWriting objects: 100% (2/2), 176 bytes | 176.00 KiB/s, done.\nTotal 2 (delta 0), reused 0 (delta 0), pack-reused 0\nremote: \nremote: Create a pull request for 'gh-pages' on GitHub by visiting:\nremote:      https://github.com/mjfrigaard/eRrata/pull/new/gh-pages\nremote: \nTo github.com:mjfrigaard/eRrata.git\n * [new branch]      gh-pages -&gt; gh-pages\n\nSwitch back to main branch\n\n$ git checkout main\nSwitched to branch 'main'\nYour branch is up to date with 'origin/main'.\n\nPublish to gh-pages site\n\n$ quarto publish gh-pages\n? Update site at https://mjfrigaard.github.io/eRrata/? (Y/n) \n? Update site at https://mjfrigaard.github.io/eRrata/? (Y/n) Yes\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "Using Git\nBasic knowledge of Git has become somewhat necessary when you decide to enter the data technology ecosystem (or other open-source projects). I won’t be diving into the Git workflow here, but I will cover the commands I used to store and publish this book.\n\nI created a repository on GitHub.com like this one: mjfrigaard/data-tech\nAdd (-A) and commit (commit -m) the files in the book folder:\n\n$ git add -A\n$ git commit -m \"first commit\"\n\npush local files to GitHub repo\n\n$ git remote add origin git@github.com:mjfrigaard/data-tech.git\n$ git branch -M main\n$ git push -u origin main\n\nCreate (checkout) an empty gh-pages branch\n\n$ git checkout --orphan gh-pages\nSwitched to a new branch 'gh-pages'\n$ git reset --hard \n$ git commit --allow-empty -m \"Initialising gh-pages branch\"\nInitialising gh-pages branch\n\npush the book files to the gh-pages branch\n\n$ git push origin gh-pages\nEnumerating objects: 2, done.\nCounting objects: 100% (2/2), done.\nWriting objects: 100% (2/2), 176 bytes | 176.00 KiB/s, done.\nTotal 2 (delta 0), reused 0 (delta 0), pack-reused 0\nremote: \nremote: Create a pull request for 'gh-pages' on GitHub by visiting:\nremote:      https://github.com/mjfrigaard/eRrata/pull/new/gh-pages\nremote: \nTo github.com:mjfrigaard/eRrata.git\n * [new branch]      gh-pages -&gt; gh-pages\n\nSwitch (checkout) back to main branch\n\n$ git checkout main\nSwitched to branch 'main'\nYour branch is up to date with 'origin/main'.\n\npublish to gh-pages branch\n\n$ quarto publish gh-pages\n? Update site at https://mjfrigaard.github.io/eRrata/? (Y/n) \n? Update site at https://mjfrigaard.github.io/eRrata/? (Y/n) Yes\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "oop-basics.html",
+    "href": "oop-basics.html",
+    "title": "Basics",
+    "section": "",
+    "text": "Object-oriented programming is…"
+  },
+  {
+    "objectID": "oop-in-r.html",
+    "href": "oop-in-r.html",
+    "title": "In R",
+    "section": "",
+    "text": "R is a ‘functional, object-oriented programming language.’"
+  },
+  {
+    "objectID": "fun-names.html",
+    "href": "fun-names.html",
+    "title": "Names",
+    "section": "",
+    "text": "Naming your functions should…"
+  },
+  {
+    "objectID": "fun-arguments.html",
+    "href": "fun-arguments.html",
+    "title": "Arguments",
+    "section": "",
+    "text": "Function arguments can be"
+  },
+  {
+    "objectID": "fun-structure.html",
+    "href": "fun-structure.html",
+    "title": "Structure",
+    "section": "",
+    "text": "Function structure refers to…"
+  },
+  {
+    "objectID": "fun-environments.html",
+    "href": "fun-environments.html",
+    "title": "Environments",
+    "section": "",
+    "text": "Inside your function…"
+  },
+  {
+    "objectID": "intro.html#how-the-sausage-is-made",
+    "href": "intro.html#how-the-sausage-is-made",
+    "title": "Introduction",
+    "section": "How the sausage is made",
+    "text": "How the sausage is made\nI’ve included the steps for publishing this book inside the book because it’s serves as an excellent example of the topics contained in this text. This book is written in quarto which is an ‘open-source scientific and technical publishing system.’ All of the tools in this text are open-source, which means the source code (i.e. files) to create it are ‘made freely available for possible modification and redistribution.’\nThe code files used to create this book are displayed in the folder tree below:\n\n\n.\n├── _book\n├── _freeze\n├── _quarto.yml\n├── cover.png\n├── data-tech.Rproj\n├── fun-arguments.qmd\n├── fun-environments.qmd\n├── fun-names.qmd\n├── fun-structure.qmd\n├── index.qmd\n├── intro.qmd\n├── intro.rmarkdown\n├── oop-basics.qmd\n├── oop-in-r.qmd\n├── preface.qmd\n├── references.bib\n├── references.qmd\n├── renv\n└── renv.lock\n\n\nThese files are stored in a GitHub repository. GitHub is a platform for hosting open source projects that use Git, the world’s most popular distributed version control system."
   }
 ]

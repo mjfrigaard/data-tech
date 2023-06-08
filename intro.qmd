@@ -2,28 +2,28 @@
 
 > *This is a book created from markdown and executable code. See @knuth84 for additional discussion of literate programming.*
 
-I've left the boilerplate text above because 1) everyone should know about Donald Knuth and his contributions to computational notebooks, and 2) I wanted to keep a working example for the `references.qmd` and `references.bib` files when I build the book.
+I've left the boilerplate text above because 1) everyone should know about [Donald Knuth](https://www.wikiwand.com/en/Donald_Knuth) and his contributions to [computational notebooks](https://www.wikiwand.com/en/Notebook_interface), and 2) I wanted to keep a working example for the `references.qmd` and `references.bib` files when I build the book.
 
-## Publishing this book (meta)
+## How the sausage is made
 
-I'm going to include the steps for publishing this book *inside* the book so I can come back later and know what I've done (readers might also find this information useful). 
+I've included the steps for publishing this book *inside* the book because it's serves as an excellent example of the topics contained in this text. This book is [written in quarto](https://quarto.org/docs/books/) which is an '*open-source scientific and technical publishing system.*' All of the tools in this text are [open-source](https://en.wikipedia.org/wiki/Open_source), which means the source code (i.e. files) to create it are '*made freely available for possible modification and redistribution*.'
 
-This [quarto book project](https://quarto.org/docs/books/) has the following contents: 
+The code files used to create this book are displayed in the folder tree below:
 
 ```{r}
 #| echo: false
 fs::dir_tree(".", recurse = 0)
 ```
 
-The GitHub repo for this book is [here](https://github.com/mjfrigaard/eRrata), and it's been set up to publish with GitHub pages.
+These files are stored in a [GitHub repository](https://github.com/mjfrigaard/data-tech). GitHub is a platform for hosting open source projects that use [Git](https://git-scm.com/), the world's most popular distributed version control system.
 
 ## Using Git 
 
-Basic knowledge of Git has become somewhat necessary when you decide to enter the R ecosystem (or other open-source projects). I won't be diving into Git commands here, but I *will* cover what commands I used to store and publish this book. 
+Basic knowledge of Git has become somewhat necessary when you decide to enter the data technology ecosystem (or other open-source projects). I won't be diving into the Git workflow here, but I *will* cover the commands I used to store and publish this book. 
 
-1. Create a repository on GitHub.com like this one: [mjfrigaard/eRrata](https://github.com/mjfrigaard/eRrata) 
+1. I created a repository on GitHub.com like this one: [mjfrigaard/data-tech](https://github.com/mjfrigaard/data-tech) 
 
-2. Add and commit the files in the book repo: 
+2. Add (`-A`) and commit (`commit -m`) the files in the book folder: 
 
 ```{verbatim}
 #| eval: false
@@ -33,18 +33,18 @@ $ git add -A
 $ git commit -m "first commit"
 ```
 
-3. Push the local repo to GitHub repo
+3. `push` local files to GitHub repo
 
 ```{verbatim}
 #| eval: false
 #| echo: true
 #| code-fold: false
-$ git remote add origin git@github.com:mjfrigaard/eRrata.git
+$ git remote add origin git@github.com:mjfrigaard/data-tech.git
 $ git branch -M main
 $ git push -u origin main
 ```
 
-4. Create a `gh-pages` branch
+4. Create (checkout) an empty `gh-pages` branch
 
 ```{verbatim}
 #| eval: false
@@ -55,6 +55,14 @@ Switched to a new branch 'gh-pages'
 $ git reset --hard 
 $ git commit --allow-empty -m "Initialising gh-pages branch"
 Initialising gh-pages branch
+```
+
+5. `push` the book files to the `gh-pages` branch
+
+```{verbatim}
+#| eval: false
+#| echo: true
+#| code-fold: false
 $ git push origin gh-pages
 Enumerating objects: 2, done.
 Counting objects: 100% (2/2), done.
@@ -68,7 +76,7 @@ To github.com:mjfrigaard/eRrata.git
  * [new branch]      gh-pages -> gh-pages
 ```
 
-5. Switch back to main branch
+5. Switch (`checkout`) back to `main` branch
 
 ```{verbatim}
 #| eval: false
@@ -79,7 +87,7 @@ Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 ```
 
-6. Publish to `gh-pages` site
+6. `publish` to `gh-pages` branch
 
 ```{verbatim}
 #| eval: false

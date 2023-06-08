@@ -1,3 +1,4 @@
-# Welcome to e`R`rata {.unnumbered}
+# Welcome! {.unnumbered}
 
-A useR's collection of errors, misunderstandings, and collisions with the R programming language.    
+This book describes the essential tools and techniques for working with data, especially those 'behind-the-scenes' tasks that will take considerable time and effort but don't receive much attention.
+
