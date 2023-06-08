@@ -1,1 +1,1 @@
-# Function arguments {.unnumbered}
+# Arguments {.unnumbered}

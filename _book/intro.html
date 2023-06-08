@@ -181,13 +181,13 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./oop-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Object-oriented programming: basics</span></a>
+ <span class="menu-text">Basics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./oop-in-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Object-oriented programming in R</span></a>
+ <span class="menu-text">In R</span></a>
   </div>
 </li>
       </ul>
@@ -204,25 +204,25 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./fun-names.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Function names</span></a>
+ <span class="menu-text">Names</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./fun-arguments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Function arguments</span></a>
+ <span class="menu-text">Arguments</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./fun-structure.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Function structure</span></a>
+ <span class="menu-text">Structure</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./fun-environments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Function environments</span></a>
+ <span class="menu-text">Environments</span></a>
   </div>
 </li>
       </ul>
@@ -274,6 +274,7 @@ div.csl-indent {
 <div class="cell-output cell-output-stdout">
 <pre><code>.
 ├── _book
+├── _freeze
 ├── _quarto.yml
 ├── cover.png
 ├── eRrata.Rproj
@@ -281,16 +282,19 @@ div.csl-indent {
 ├── fun-environments.qmd
 ├── fun-names.qmd
 ├── fun-structure.qmd
+├── index.html
 ├── index.qmd
 ├── intro.qmd
 ├── intro.rmarkdown
 ├── oop-basics.qmd
 ├── oop-in-r.qmd
+├── preface.html
 ├── preface.qmd
 ├── references.bib
 ├── references.qmd
 ├── renv
-└── renv.lock</code></pre>
+├── renv.lock
+└── site_libs</code></pre>
 </div>
 </div>
 <p>The GitHub repo for this book is <a href="https://github.com/mjfrigaard/eRrata">here</a>, and it’s been set up to publish with GitHub pages.</p>
@@ -302,14 +306,45 @@ div.csl-indent {
 <li><p>Create a repository on GitHub.com like this one: <a href="https://github.com/mjfrigaard/eRrata">mjfrigaard/eRrata</a></p></li>
 <li><p>Add and commit the files in the book repo:</p></li>
 </ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>git add -A</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>git commit -m "first commit"</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="4" type="1">
+<div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>$ git add -A</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>$ git commit -m "first commit"</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
 <li>Push the local repo to GitHub repo</li>
 </ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>git remote add origin git@github.com:mjfrigaard/eRrata.git</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>git branch -M main</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>git push -u origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>$ git remote add origin git@github.com:mjfrigaard/eRrata.git</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>$ git branch -M main</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>$ git push -u origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="4" type="1">
+<li>Create a <code>gh-pages</code> branch</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>$ git checkout --orphan gh-pages</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>Switched to a new branch 'gh-pages'</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>$ git reset --hard </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>$ git commit --allow-empty -m "Initialising gh-pages branch"</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>Initialising gh-pages branch</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>$ git push origin gh-pages</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>Enumerating objects: 2, done.</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>Counting objects: 100% (2/2), done.</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>Writing objects: 100% (2/2), 176 bytes | 176.00 KiB/s, done.</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>Total 2 (delta 0), reused 0 (delta 0), pack-reused 0</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>remote: </span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>remote: Create a pull request for 'gh-pages' on GitHub by visiting:</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>remote:      https://github.com/mjfrigaard/eRrata/pull/new/gh-pages</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>remote: </span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>To github.com:mjfrigaard/eRrata.git</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a> * [new branch]      gh-pages -&gt; gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="5" type="1">
+<li>Switch back to main branch</li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>$ git checkout main</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>Switched to branch 'main'</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>Your branch is up to date with 'origin/main'.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="6" type="1">
+<li>Publish to <code>gh-pages</code> site</li>
+</ol>
+<div class="sourceCode" id="cb6"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>$ quarto publish gh-pages</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>? Update site at https://mjfrigaard.github.io/eRrata/? (Y/n) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>? Update site at https://mjfrigaard.github.io/eRrata/? (Y/n) Yes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
@@ -561,7 +596,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./oop-basics.html" class="pagination-link">
-        <span class="nav-page-text">Object-oriented programming: basics</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Basics</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

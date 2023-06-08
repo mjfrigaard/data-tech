@@ -1,1 +1,1 @@
-# Object-oriented programming: basics {.unnumbered}
+# Basics {.unnumbered}

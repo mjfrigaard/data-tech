@@ -1,1 +1,1 @@
-# Function environments {.unnumbered}
+# Environments {.unnumbered}
