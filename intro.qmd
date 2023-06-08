@@ -29,7 +29,20 @@ Basic knowledge of Git has become somewhat necessary when you decide to enter th
 #| eval: false
 #| echo: true
 #| code-fold: false
-
+git add -A
+git commit -m "first commit"
 ```
+
+4. Push the local repo to GitHub repo
+
+```{verbatim}
+#| eval: false
+#| echo: true
+#| code-fold: false
+git remote add origin git@github.com:mjfrigaard/eRrata.git
+git branch -M main
+git push -u origin main
+```
+
 
 

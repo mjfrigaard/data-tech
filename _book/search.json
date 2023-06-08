@@ -25,6 +25,6 @@
     "href": "intro.html#using-git",
     "title": "Introduction",
     "section": "Using Git",
-    "text": "Using Git\nBasic knowledge of Git has become somewhat necessary when you decide to enter the R ecosystem (or other open-source projects). I won’t be diving into Git commands here, but I will cover what commands I used to store and publish this book.\n\nCreate a repository on GitHub.com like this one: mjfrigaard/eRrata\nAdd and commit the files in the book repo:\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "Using Git\nBasic knowledge of Git has become somewhat necessary when you decide to enter the R ecosystem (or other open-source projects). I won’t be diving into Git commands here, but I will cover what commands I used to store and publish this book.\n\nCreate a repository on GitHub.com like this one: mjfrigaard/eRrata\nAdd and commit the files in the book repo:\n\ngit add -A\ngit commit -m \"first commit\"\n\nPush the local repo to GitHub repo\n\ngit remote add origin git@github.com:mjfrigaard/eRrata.git\ngit branch -M main\ngit push -u origin main\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   }
 ]
