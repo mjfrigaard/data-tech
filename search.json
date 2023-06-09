@@ -7,6 +7,41 @@
     "text": "Welcome!\nThis book describes the essential tools and techniques for working with data, especially those ‘behind-the-scenes’ tasks that will take considerable time and effort but don’t receive much attention."
   },
   {
+    "objectID": "index.html#code",
+    "href": "index.html#code",
+    "title": "Data Technologies",
+    "section": "Code",
+    "text": "Code\nThis section introduces programming languages, the command-line interface, regular expressions, and computational notebooks."
+  },
+  {
+    "objectID": "index.html#object-oriented-programming",
+    "href": "index.html#object-oriented-programming",
+    "title": "Data Technologies",
+    "section": "Object-oriented programming",
+    "text": "Object-oriented programming\nIn this section covers the object-oriented programming (OOP) paradigm, common features, and why OOP languages are useful for working with data. Three languages (R, Python, and JavaScript) are introduced as examples to compare and contrast."
+  },
+  {
+    "objectID": "index.html#functions",
+    "href": "index.html#functions",
+    "title": "Data Technologies",
+    "section": "Functions",
+    "text": "Functions"
+  },
+  {
+    "objectID": "index.html#data",
+    "href": "index.html#data",
+    "title": "Data Technologies",
+    "section": "Data",
+    "text": "Data"
+  },
+  {
+    "objectID": "index.html#git",
+    "href": "index.html#git",
+    "title": "Data Technologies",
+    "section": "Git",
+    "text": "Git"
+  },
+  {
     "objectID": "preface.html",
     "href": "preface.html",
     "title": "Preface",
@@ -18,63 +53,91 @@
     "href": "intro.html#how-the-sausage-is-made",
     "title": "Introduction",
     "section": "How the sausage is made",
-    "text": "How the sausage is made\nI’ve included the steps for publishing this book inside the book because it’s serves as an excellent example of the topics contained in this text. This book is written in quarto which is an ‘open-source scientific and technical publishing system.’ All of the tools in this text are open-source, which means the source code (i.e. files) to create it are ‘made freely available for possible modification and redistribution.’\nThe code files used to create this book are displayed in the folder tree below:\n\n\n.\n├── _book\n├── _freeze\n├── _quarto.yml\n├── cover.png\n├── data-tech.Rproj\n├── fun-arguments.qmd\n├── fun-environments.qmd\n├── fun-names.qmd\n├── fun-structure.qmd\n├── index.qmd\n├── intro.qmd\n├── intro.rmarkdown\n├── oop-basics.qmd\n├── oop-in-r.qmd\n├── preface.qmd\n├── references.bib\n├── references.qmd\n├── renv\n└── renv.lock\n\n\nThese files are stored in a GitHub repository. GitHub is a platform for hosting open source projects that use Git, the world’s most popular distributed version control system."
+    "text": "How the sausage is made\nI’ve included the steps for publishing this book inside the book because it’s serves as an excellent example of the combined topics contained in this text can be used. This book is written in Quarto which is an ‘open-source scientific and technical publishing system.’ All of the tools in this text are open-source, which means the source code (i.e. files) to create it are ‘made freely available for possible modification and redistribution.’\nThe code files used to create this book are displayed in the folder tree below:\n\n\n.\n├── _book\n├── _freeze\n├── _inst.R\n├── _quarto.yml\n├── code.qmd\n├── command-line.qmd\n├── cover.png\n├── data-tech.Rproj\n├── files.qmd\n├── fun-arguments.qmd\n├── fun-environments.qmd\n├── fun-names.qmd\n├── fun-structure.qmd\n├── index.qmd\n├── intro.qmd\n├── intro.rmarkdown\n├── notebooks.qmd\n├── oop-basics.qmd\n├── oop-in-python.qmd\n├── oop-in-r.qmd\n├── preface.qmd\n├── references.bib\n├── references.qmd\n├── regex.qmd\n├── renv\n└── renv.lock\n\n\nThese files are stored in a GitHub repository. GitHub is a platform for hosting open source projects that use Git, the world’s most popular distributed version control system."
   },
   {
     "objectID": "intro.html#using-git",
     "href": "intro.html#using-git",
     "title": "Introduction",
     "section": "Using Git",
-    "text": "Using Git\nBasic knowledge of Git has become somewhat necessary when you decide to enter the data technology ecosystem (or other open-source projects). I won’t be diving into the Git workflow here, but I will cover the commands I used to store and publish this book.\n\nI created a repository on GitHub.com like this one: mjfrigaard/data-tech\nAdd (-A) and commit (commit -m) the files in the book folder:\n\n$ git add -A\n$ git commit -m \"first commit\"\n\npush local files to GitHub repo\n\n$ git remote add origin git@github.com:mjfrigaard/data-tech.git\n$ git branch -M main\n$ git push -u origin main\n\nCreate (checkout) an empty gh-pages branch\n\n$ git checkout --orphan gh-pages\nSwitched to a new branch 'gh-pages'\n$ git reset --hard \n$ git commit --allow-empty -m \"Initialising gh-pages branch\"\nInitialising gh-pages branch\n\npush the book files to the gh-pages branch\n\n$ git push origin gh-pages\nEnumerating objects: 2, done.\nCounting objects: 100% (2/2), done.\nWriting objects: 100% (2/2), 176 bytes | 176.00 KiB/s, done.\nTotal 2 (delta 0), reused 0 (delta 0), pack-reused 0\nremote: \nremote: Create a pull request for 'gh-pages' on GitHub by visiting:\nremote:      https://github.com/mjfrigaard/data-tech/pull/new/gh-pages\nremote: \nTo github.com:mjfrigaard/data-tech.git\n * [new branch]      gh-pages -&gt; gh-pages\n\nSwitch (checkout) back to main branch\n\n$ git checkout main\nSwitched to branch 'main'\nYour branch is up to date with 'origin/main'.\n\npublish to gh-pages branch\n\n$ quarto publish gh-pages\n? Update site at https://mjfrigaard.github.io/data-tech/? (Y/n) \n? Update site at https://mjfrigaard.github.io/data-tech/? (Y/n) Yes\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "Using Git\nBasic knowledge of Git has become somewhat necessary when you decide to enter the data technology ecosystem (or other open-source projects). I won’t be diving into the Git workflow here, but I will cover the commands I used to store and publish this book.\nThe following commands are entered at the command line (Terminal if you’re using macOS).\n\nI created a repository on GitHub.com like this one: mjfrigaard/data-tech\nAdd (-A) and commit (commit -m) the files in the book folder:\n\n$ git add -A\n$ git commit -m \"first commit\"\n\npush local files to GitHub repo\n\n$ git remote add origin git@github.com:mjfrigaard/data-tech.git\n$ git branch -M main\n$ git push -u origin main\n\nCreate (checkout) an empty gh-pages branch\n\n$ git checkout --orphan gh-pages\nSwitched to a new branch 'gh-pages'\n$ git reset --hard \n$ git commit --allow-empty -m \"Initialising gh-pages branch\"\nInitialising gh-pages branch\n\npush the book files to the gh-pages branch\n\n$ git push origin gh-pages\nEnumerating objects: 2, done.\nCounting objects: 100% (2/2), done.\nWriting objects: 100% (2/2), 176 bytes | 176.00 KiB/s, done.\nTotal 2 (delta 0), reused 0 (delta 0), pack-reused 0\nremote: \nremote: Create a pull request for 'gh-pages' on GitHub by visiting:\nremote:      https://github.com/mjfrigaard/data-tech/pull/new/gh-pages\nremote: \nTo github.com:mjfrigaard/data-tech.git\n * [new branch]      gh-pages -&gt; gh-pages\n\nSwitch (checkout) back to main branch\n\n$ git checkout main\nSwitched to branch 'main'\nYour branch is up to date with 'origin/main'.\n\npublish to gh-pages branch\n\n$ quarto publish gh-pages\n? Update site at https://mjfrigaard.github.io/data-tech/? (Y/n) \n? Update site at https://mjfrigaard.github.io/data-tech/? (Y/n) Yes\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
   {
-    "objectID": "plain-text.html#machine-readable",
-    "href": "plain-text.html#machine-readable",
+    "objectID": "code.html#machine-vs.-human-readable-code",
+    "href": "code.html#machine-vs.-human-readable-code",
     "title": "Writing code",
-    "section": "Machine readable",
-    "text": "Machine readable\nIn order to work, the machine (i.e. computer) must be able to execute the code you’ve written."
+    "section": "Machine vs. human-readable code",
+    "text": "Machine vs. human-readable code\nMachine-readable code consists of binary instructions (a series of 1s and 0s) that can be processed by computers directly. Machine code is fast and efficient to execute but is difficult for humans to read and write.\nAssembly languages are low-level languages that are a step above machine-readable code. These languages are somewhat human-readable but are still much more difficult for humans to read than high-level languages.\nLanguages like R, Python, JavaScript, and many others are high-level languages designed to be human-readable with syntax and grammar that imitate natural languages. All higher-level code must be translated into machine-readable code before the computer can run it."
   },
   {
-    "objectID": "plain-text.html#human-readable",
-    "href": "plain-text.html#human-readable",
+    "objectID": "code.html#markup-languages",
+    "href": "code.html#markup-languages",
     "title": "Writing code",
-    "section": "Human readable",
-    "text": "Human readable\nCode is always read by at least two people: you, and future you."
+    "section": "Markup languages",
+    "text": "Markup languages\nA markup language is a text-encoding system for annotating a document with a set of symbols that are syntactically distinguishable from its text. Markup languages are not programming languages per se but refer to a set of characters or symbols you can insert at certain places in a text file to indicate how the style of the output document should look when it’s printed or displayed.\n\nHTML\nHTML, or Hypertext Markup Language, is the standard language used to structure content on the web and is a fundamental technology used in all websites.\nSyntax: HTML tags denote different types of content. Tags are enclosed in angle brackets (&lt;/&gt;) and come in pairs to create HTML elements. The first tag in the pair is the start tag (&lt;), and the second tag is the end tag, which is the same as the start tag, but also includes a forward slash (/&gt;).\n&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n  &lt;head&gt;\n    &lt;title&gt;Title for page&lt;/title&gt;\n  &lt;/head&gt;\n  &lt;body&gt;\n    &lt;h1&gt;This is a level 1 heading&lt;/h1&gt;\n    &lt;p&gt;This is the first paragraph.&lt;/p&gt;\n    &lt;p&gt;This is the second paragraph.&lt;/p&gt;\n  &lt;/body&gt;\n&lt;/html&gt;\nThe HTML document above has a basic structure that includes &lt;html&gt;, &lt;head&gt; and &lt;body&gt; tags:\n\nThe document above begins with the &lt;!DOCTYPE html&gt;declaration to tells your browser application is an HTML5 document\nThe &lt;html&gt;/&lt;/html&gt; tags enclose the entire document\nInside &lt;html&gt;/&lt;/html&gt;, the &lt;head&gt;/&lt;/head&gt; elements contain meta-information about the document (&lt;title&gt;/&lt;/title&gt;), which is displayed in the browser’s title bar or tab.\nThe &lt;body&gt;/&lt;/body&gt;element contains the actual content of the webpage (text, add images, create links, forms, embed audio, video, and other media, etc.)\n\n\n\n\n\n\n\nTerms to know\n\n\n\nHTML5 is refers to the ‘fifth and final major HTML version that is a World Wide Web Consortium recommendation.’ Wikipedia\n\n\n\n\nMarkdown\nMarkdown is a ‘lightweight’ markup language for creating formatted text using a text editor. Markdown is primarily used to convert plain text into HTML, but it’s also used to format README files, and for writing messages in online discussion forums like Stack Overflow.\nSyntax:\n\nHeaders from levels 1 to 6 can be created using a number of # symbols corresponding to the header level:\n\n# Header 1 for a first-level header\n## Header 2 for a second-level header, and so on.\n\nAsterisks (*) or underscores (_) are used for emphasis:\n\n*italic* or _italic_ for italic\n\n**bold** or __bold__for bold\n\nYou can also combine them to create bold italic text like ***bold italic*** or ___bold italic___\n\nUnordered lists are creatd using asterisks, plus signs, or hyphens interchangeably (*, +, -)\n\n\n\n\nMarkdown syntax\n- Item A\n- Item B\n- Item C\n\n\nRendered HTML\n\nItem A\nItem B\nItem C\n\n\n\n\n\nOrdered lists are created using numbers followed by periods\n\n\n\n\nMarkdown syntax\n1. Item 1\n2. Item 2\n3. Item 3\n\n\nRendered HTML\n\nItem 1\nItem 2\nItem 3"
   },
   {
-    "objectID": "plain-text.html#html",
-    "href": "plain-text.html#html",
+    "objectID": "code.html#yaml",
+    "href": "code.html#yaml",
     "title": "Writing code",
-    "section": "HTML",
-    "text": "HTML\nHypertext markup language\n\nMarkdown"
+    "section": "YAML",
+    "text": "YAML\nYAML is a human-friendly, easily readable data serialization standard that can be used in conjunction with all programming languages."
   },
   {
-    "objectID": "plain-text.html#r",
-    "href": "plain-text.html#r",
+    "objectID": "code.html#r",
+    "href": "code.html#r",
     "title": "Writing code",
     "section": "R",
     "text": "R"
   },
   {
-    "objectID": "plain-text.html#python",
-    "href": "plain-text.html#python",
+    "objectID": "code.html#python",
+    "href": "code.html#python",
     "title": "Writing code",
     "section": "Python",
     "text": "Python"
   },
   {
-    "objectID": "plain-text.html#javascript",
-    "href": "plain-text.html#javascript",
+    "objectID": "code.html#javascript",
+    "href": "code.html#javascript",
     "title": "Writing code",
     "section": "JavaScript",
     "text": "JavaScript"
+  },
+  {
+    "objectID": "files.html",
+    "href": "files.html",
+    "title": "Code files",
+    "section": "",
+    "text": "Open-source code is written in plain text files."
   },
   {
     "objectID": "command-line.html",
     "href": "command-line.html",
     "title": "The command line",
     "section": "",
-    "text": "The command line is…"
+    "text": "“In the beginning, there was the command line…” - essay by Neal Stephenson"
+  },
+  {
+    "objectID": "notebooks.html#jupyter-notebooks",
+    "href": "notebooks.html#jupyter-notebooks",
+    "title": "Computational notebooks",
+    "section": "Jupyter Notebooks",
+    "text": "Jupyter Notebooks"
+  },
+  {
+    "objectID": "notebooks.html#r-markdown",
+    "href": "notebooks.html#r-markdown",
+    "title": "Computational notebooks",
+    "section": "R Markdown",
+    "text": "R Markdown"
+  },
+  {
+    "objectID": "notebooks.html#quarto",
+    "href": "notebooks.html#quarto",
+    "title": "Computational notebooks",
+    "section": "Quarto",
+    "text": "Quarto"
   },
   {
     "objectID": "oop-basics.html",
