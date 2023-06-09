@@ -2,3 +2,21 @@
 
 This book describes the essential tools and techniques for working with data, especially those 'behind-the-scenes' tasks that will take considerable time and effort but don't receive much attention.
 
+## Code 
+
+This section introduces programming languages, the command-line interface, regular expressions, and computational notebooks. 
+
+## Object-oriented programming 
+
+In this section covers the object-oriented programming (OOP) paradigm, common features, and why OOP languages are useful for working with data. Three languages (R, Python, and JavaScript) are introduced as examples to compare and contrast.
+
+## Functions
+
+
+
+## Data 
+
+## Git
+
+
+

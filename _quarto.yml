@@ -12,7 +12,7 @@ book:
   - intro.qmd
   - part: "Code"
     chapters: 
-        - plain-text.qmd
+        - code.qmd
         - files.qmd
         - command-line.qmd
         - regex.qmd

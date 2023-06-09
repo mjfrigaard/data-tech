@@ -1,0 +1,137 @@
+# Writing code {.unnumbered}
+
+Language is a technology that gives humans the ability to express ideas with precision. A programming language--what is typically meant when someone refers to 'code'--is the arrangement of words, numbers, and/or symbols we use to communicate our intentions to a computer.
+
+> *"The code that translates a web of conceptual relations in our heads into an early-to-late order in our mouths, or into a left-to-right order on the page, is called **syntax**...Different languages have different **grammars**, but they all convey conceptual relationships by modifying and arranging words." - [The Sense of Style, Steven Pinker (2014)](https://stevenpinker.com/publications/sense-style-thinking-persons-guide-writing-21st-century)*
+
+Natural languages are used for a wide range of human communication, from slang terms in casual conversation to complex expressions of abstract ideas. The pragmatic quality of natural languages requires them to have high levels of redundancy. Redundancy helps us understand each other even when the rules of syntax are violated (i.e., when the same word can have different meanings in different contexts or when a sentence can have multiple valid interpretations).
+
+Programming languages require higher levels of precision than natural languages. Poorly written sentences can be painful to read or difficult to comprehend, but they don't ruin an entire book. Computers are uncompromising when it comes to syntax--all code must perfectly conform to the rules for syntax, grammar, and semantics before the code will work. Writing code is like writing a book where a single typo makes the entire text illegible. 
+
+::: {.callout-note title="Terms to know"}
+
+**Grammar**: the rules for how a language uses symbols (words, numbers, symbols, punctuation, etc.).
+
+**Syntax**: how to arrange words and phrases into sentences to create meaning.
+
+**Semantics**: the meaning of words and sentences.
+
+:::
+
+## Machine vs. human-readable code
+
+Machine-readable code consists of binary instructions (a series of 1s and 0s) that can be processed by computers directly. Machine code is fast and efficient to execute but is difficult for humans to read and write. 
+
+Assembly languages are low-level languages that are a step above machine-readable code. These languages are *somewhat* human-readable but are still much more difficult for humans to read than high-level languages.
+
+Languages like R, Python, JavaScript, and many others are high-level languages designed to be human-readable with syntax and grammar that imitate natural languages. All higher-level code must be translated into machine-readable code before the computer can run it.
+
+
+## Markup languages
+
+A markup language is a [text-encoding system](https://en.wikipedia.org/wiki/Markup_language?oldformat=true) for annotating a document with a set of symbols that are syntactically distinguishable from its text. Markup languages are not programming languages per se but refer to a set of characters or symbols you can insert at certain places in a text file to indicate how the style of the output document should look when it’s printed or displayed.
+
+
+### HTML
+
+`HTML`, or Hypertext Markup Language, is the standard language used to structure content on the web and is a fundamental technology used in all websites. 
+
+**Syntax**: `HTML` [tags](https://www.w3schools.com/tags/) denote different types of content. Tags are enclosed in angle brackets (`</>`) and come in pairs to create `HTML` elements. The first tag in the pair is the start tag (`<`), and the second tag is the end tag, which is the same as the start tag, but also includes a forward slash (`/>`).
+
+```HTML
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title for page</title>
+  </head>
+  <body>
+    <h1>This is a level 1 heading</h1>
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+  </body>
+</html>
+```
+
+The HTML document above has a basic structure that includes `<html>`, `<head>` and `<body>` tags:
+
+-   The document above begins with the `<!DOCTYPE html> `declaration to tells your browser application is an HTML5 document
+
+-   The `<html>`/`</html>` tags enclose the entire document
+
+-   Inside `<html>`/`</html>`, the `<head>`/`</head>` elements contain meta-information about the document (`<title>`/`</title>`), which is displayed in the browser's title bar or tab.
+
+-   The `<body>`/`</body> `element contains the actual content of the webpage (text, add images, create links, forms, embed audio, video, and other media, etc.)
+
+::: {.callout-note title="Terms to know"}
+
+**HTML5** is refers to the '*fifth and final major HTML version that is a World Wide Web Consortium recommendation*.' [Wikipedia](https://en.wikipedia.org/wiki/HTML5?oldformat=true) 
+
+:::
+
+### Markdown
+
+Markdown is a 'lightweight' markup language for creating formatted text using a text editor. Markdown is primarily used to convert plain text into `HTML`, but it's also used to format `README` files, and for writing messages in online discussion forums like [Stack Overflow](https://stackoverflow.com/).
+
+**Syntax**:
+
+-   Headers from levels 1 to 6 can be created using a number of # symbols corresponding to the header level:
+    -   `# Header 1` for a first-level header
+    -   `## Header 2` for a second-level header, and so on.
+
+-   Asterisks (`*`) or underscores (`_`) are used for emphasis: 
+    -   `*italic*` or `_italic_` for italic   
+    -   `**bold**` or `__bold__ `for bold   
+    -   You can also combine them to create bold italic text like `***bold italic***` or `___bold italic___`
+
+-   Unordered lists are creatd using asterisks, plus signs, or hyphens interchangeably (`*`, `+`, `-`)
+
+::: {layout-ncol=2}
+
+##### *Markdown syntax*
+
+```Markdown
+- Item A
+- Item B
+- Item C
+```
+
+##### *Rendered HTML*
+
+- Item A
+- Item B
+- Item C
+
+:::
+
+-   Ordered lists are created using numbers followed by periods
+
+::: {layout-ncol=2}
+
+#### *Markdown syntax*
+
+```Markdown
+1. Item 1
+2. Item 2
+3. Item 3
+```
+
+#### *Rendered HTML*
+
+1. Item 1
+2. Item 2
+3. Item 3
+
+:::
+
+
+## YAML 
+
+`YAML` is a human-friendly, easily readable data serialization standard that can be used in conjunction with all programming languages.
+
+
+
+## R
+
+## Python
+
+## JavaScript

@@ -83,7 +83,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./plain-text.html" rel="next">
+<link href="./code.html" rel="next">
 <link href="./preface.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -180,7 +180,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./plain-text.html" class="sidebar-item-text sidebar-link">
+  <a href="./code.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Writing code</span></a>
   </div>
 </li>
@@ -312,19 +312,23 @@ div.csl-indent {
 <blockquote class="blockquote">
 <p><em>This is a book created from markdown and executable code. See <span class="citation" data-cites="knuth84">Knuth (<a href="#ref-knuth84" role="doc-biblioref">1984</a>)</span> for additional discussion of literate programming.</em></p>
 </blockquote>
-<p>I’ve left the boilerplate text above because 1) everyone should know about <a href="https://www.wikiwand.com/en/Donald_Knuth">Donald Knuth</a> and his contributions to <a href="https://www.wikiwand.com/en/Notebook_interface">computational notebooks</a>, and 2) I wanted to keep a working example for the <code>references.qmd</code> and <code>references.bib</code> files when I build the book.</p>
+<p>I’ve left the boilerplate text above because everyone should know about <a href="https://en.wikipedia.org/wiki/Donald_Knuth?oldformat=true">Donald Knuth</a> and his contributions to <a href="https://en.wikipedia.org/wiki/Literate_programming?oldformat=true">literate programming</a> that lead to the book you’re currently reading.</p>
 <section id="how-the-sausage-is-made" class="level2">
 <h2 class="anchored" data-anchor-id="how-the-sausage-is-made">How the sausage is made</h2>
-<p>I’ve included the steps for publishing this book <em>inside</em> the book because it’s serves as an excellent example of the topics contained in this text. This book is <a href="https://quarto.org/docs/books/">written in quarto</a> which is an ‘<em>open-source scientific and technical publishing system.</em>’ All of the tools in this text are <a href="https://en.wikipedia.org/wiki/Open_source">open-source</a>, which means the source code (i.e.&nbsp;files) to create it are ‘<em>made freely available for possible modification and redistribution</em>.’</p>
+<p>I’ve included the steps for publishing this book <em>inside</em> the book because it’s serves as an excellent example of the combined topics contained in this text can be used. This book is <a href="https://quarto.org/docs/books/">written in Quarto</a> which is an ‘<em>open-source scientific and technical publishing system.</em>’ All of the tools in this text are <a href="https://en.wikipedia.org/wiki/Open_source">open-source</a>, which means the source code (i.e.&nbsp;files) to create it are ‘<em>made freely available for possible modification and redistribution</em>.’</p>
 <p>The code files used to create this book are displayed in the folder tree below:</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>.
 ├── _book
 ├── _freeze
+├── _inst.R
 ├── _quarto.yml
+├── code.qmd
+├── command-line.qmd
 ├── cover.png
 ├── data-tech.Rproj
+├── files.qmd
 ├── fun-arguments.qmd
 ├── fun-environments.qmd
 ├── fun-names.qmd
@@ -332,11 +336,14 @@ div.csl-indent {
 ├── index.qmd
 ├── intro.qmd
 ├── intro.rmarkdown
+├── notebooks.qmd
 ├── oop-basics.qmd
+├── oop-in-python.qmd
 ├── oop-in-r.qmd
 ├── preface.qmd
 ├── references.bib
 ├── references.qmd
+├── regex.qmd
 ├── renv
 └── renv.lock</code></pre>
 </div>
@@ -346,8 +353,9 @@ div.csl-indent {
 <section id="using-git" class="level2">
 <h2 class="anchored" data-anchor-id="using-git">Using Git</h2>
 <p>Basic knowledge of Git has become somewhat necessary when you decide to enter the data technology ecosystem (or other open-source projects). I won’t be diving into the Git workflow here, but I <em>will</em> cover the commands I used to store and publish this book.</p>
+<p>The following commands are entered at the command line (Terminal if you’re using macOS).</p>
 <ol type="1">
-<li><p>I created a repository on GitHub.com like this one: <a href="https://github.com/mjfrigaard/data-tech">mjfrigaard/data-tech</a></p></li>
+<li><p>I created a repository on <a href="https://github.com">GitHub.com</a> like this one: <a href="https://github.com/mjfrigaard/data-tech">mjfrigaard/data-tech</a></p></li>
 <li><p>Add (<code>-A</code>) and commit (<code>commit -m</code>) the files in the book folder:</p></li>
 </ol>
 <div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>$ git add -A</span>
@@ -642,7 +650,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./plain-text.html" class="pagination-link">
+      <a href="./code.html" class="pagination-link">
         <span class="nav-page-text">Writing code</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
