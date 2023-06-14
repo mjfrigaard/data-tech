@@ -2,22 +2,31 @@
 
 > *This is a book created from markdown and executable code. See @knuth84 for additional discussion of literate programming.*
 
-I've left the boilerplate text above because everyone should know about [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth?oldformat=true) and his contributions to [literate programming](https://en.wikipedia.org/wiki/Literate_programming?oldformat=true) that lead to the book you're currently reading. 
+I've left the boilerplate text above in this text because it's fitting for a book on data technology. [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth?oldformat=true) and his contributions to [literate programming](https://en.wikipedia.org/wiki/Literate_programming?oldformat=true) eventually lead to the document you're reading. In literate programming, explanations and logic (written in natural language) are interspersed with snippets or 'chunks' of code, which can be compiled into various output formats, or used as a virtual notebook environment. 
 
-## How the sausage is made
+It's hard to overstate the importance of this technology. Before literate programming, the world of code was largely separated from most other forms of written language. The combination of code with natural language...
 
-I've included the steps for publishing this book *inside* the book because it's serves as an excellent example of the combined topics contained in this text can be used. This book is [written in Quarto](https://quarto.org/docs/books/) which is an '*open-source scientific and technical publishing system.*' All of the tools in this text are [open-source](https://en.wikipedia.org/wiki/Open_source), which means the source code (i.e. files) to create it are '*made freely available for possible modification and redistribution*.'
 
-The code files used to create this book are displayed in the folder tree below:
+Literate programming has done for code what... 
+
+## Open source
+
+I've included the steps for publishing this book *inside* the book because it's serves as an excellent example of the topics contained in this text. This book is [written in Quarto](https://quarto.org/docs/books/), which is an '*open-source scientific and technical publishing system.*' All of the tools in this text are [open-source](https://en.wikipedia.org/wiki/Open_source), which means the source code (i.e. files) to create it are '*made freely available for possible modification and redistribution*.'
+
+If we look at the code files used to create this book in the folder tree below we notice multiple file types (extensions) and names:
 
 ```{r}
 #| echo: false
-fs::dir_tree(".", recurse = 0)
+#| eval: true
+#| collapse: false
+fs::dir_tree("_book", recurse = TRUE)
 ```
+
+Each of these 
 
 These files are stored in a [GitHub repository](https://github.com/mjfrigaard/data-tech). GitHub is a platform for hosting open source projects that use [Git](https://git-scm.com/), the world's most popular distributed version control system.
 
-## Using Git 
+## Collaboration
 
 Basic knowledge of Git has become somewhat necessary when you decide to enter the data technology ecosystem (or other open-source projects). I won't be diving into the Git workflow here, but I *will* cover the commands I used to store and publish this book. 
 

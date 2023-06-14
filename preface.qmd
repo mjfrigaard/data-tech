@@ -4,7 +4,7 @@ This book is focused on computational tools for working with data. Data science 
 
 The topics include coding languages, computational documents, data storage and file formats, version control systems, and general computer science topics.
 
-This text emphasizes using tools that require typing code on a keyboard (rather than using a mouse to point and click).
+This text emphasizes using open-source tools that require typing code on a keyboard (rather than using a mouse to point and click).
 
 This book was written in Quarto (learn more about [Quarto books](https://quarto.org/docs/books)).
 

@@ -32,6 +32,7 @@ book:
 
 bibliography: references.bib
 
+callout-icon: false
 
 format:
   html:

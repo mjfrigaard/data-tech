@@ -265,16 +265,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#machine-vs.-human-readable-code" id="toc-machine-vs.-human-readable-code" class="nav-link active" data-scroll-target="#machine-vs.-human-readable-code">Machine vs.&nbsp;human-readable code</a></li>
-  <li><a href="#markup-languages" id="toc-markup-languages" class="nav-link" data-scroll-target="#markup-languages">Markup languages</a>
+  <li><a href="#types-of-code" id="toc-types-of-code" class="nav-link active" data-scroll-target="#types-of-code">Types of code</a>
   <ul class="collapse">
-  <li><a href="#html" id="toc-html" class="nav-link" data-scroll-target="#html">HTML</a></li>
-  <li><a href="#markdown" id="toc-markdown" class="nav-link" data-scroll-target="#markdown">Markdown</a></li>
+  <li><a href="#markup-languages" id="toc-markup-languages" class="nav-link" data-scroll-target="#markup-languages">Markup languages</a></li>
+  <li><a href="#programming-languages" id="toc-programming-languages" class="nav-link" data-scroll-target="#programming-languages">Programming languages</a></li>
+  <li><a href="#other-languages" id="toc-other-languages" class="nav-link" data-scroll-target="#other-languages">Other languages</a></li>
   </ul></li>
-  <li><a href="#yaml" id="toc-yaml" class="nav-link" data-scroll-target="#yaml">YAML</a></li>
-  <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r">R</a></li>
-  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python">Python</a></li>
-  <li><a href="#javascript" id="toc-javascript" class="nav-link" data-scroll-target="#javascript">JavaScript</a></li>
   </ul>
 </nav>
     </div>
@@ -298,16 +294,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>Language is a technology that gives humans the ability to express ideas with precision. A programming language–what is typically meant when someone refers to ‘code’–is the arrangement of words, numbers, and/or symbols we use to communicate our intentions to a computer.</p>
+<p>Language is a technology that gives humans the ability to express ideas with precision. Natural languages like English or Spanish are used for a wide range of human communication, from slang terms in casual conversation to complex expressions of abstract ideas. Programming languages–<em>what is typically meant when someone refers to ‘code’</em>–are the arrangement of words, numbers, and/or symbols we use to communicate our intentions to a computer.</p>
+<p>Natural languages have a pragmatic quality that requires them to have high levels of redundancy. Redundancy helps us understand each other even when the rules of syntax are violated (i.e., when the same word can have different meanings in different contexts or when a sentence can have multiple valid interpretations).</p>
 <blockquote class="blockquote">
 <p><em>“The code that translates a web of conceptual relations in our heads into an early-to-late order in our mouths, or into a left-to-right order on the page, is called <strong>syntax</strong>…Different languages have different <strong>grammars</strong>, but they all convey conceptual relationships by modifying and arranging words.” - <a href="https://stevenpinker.com/publications/sense-style-thinking-persons-guide-writing-21st-century">The Sense of Style, Steven Pinker (2014)</a></em></p>
 </blockquote>
-<p>Natural languages are used for a wide range of human communication, from slang terms in casual conversation to complex expressions of abstract ideas. The pragmatic quality of natural languages requires them to have high levels of redundancy. Redundancy helps us understand each other even when the rules of syntax are violated (i.e., when the same word can have different meanings in different contexts or when a sentence can have multiple valid interpretations).</p>
-<p>Programming languages require higher levels of precision than natural languages. Poorly written sentences can be painful to read or difficult to comprehend, but they don’t ruin an entire book. Computers are uncompromising when it comes to syntax–all code must perfectly conform to the rules for syntax, grammar, and semantics before the code will work. Writing code is like writing a book where a single typo makes the entire text illegible.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Terms to know">
+<p>Programming languages require higher levels of precision than natural languages. Poorly written sentences can be painful to read or difficult to comprehend, but they don’t ruin an entire book. Computers are uncompromising when it comes to syntax: <strong>code must perfectly conform to the rules for syntax, grammar, and semantics before the code will work</strong>. Writing code is like writing a book where a single typo makes the entire text illegible.</p>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="Terms to know">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Terms to know
@@ -319,126 +315,202 @@ Terms to know
 <p><strong>Semantics</strong>: the meaning of words and sentences.</p>
 </div>
 </div>
-<section id="machine-vs.-human-readable-code" class="level2">
-<h2 class="anchored" data-anchor-id="machine-vs.-human-readable-code">Machine vs.&nbsp;human-readable code</h2>
+<section id="types-of-code" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-code">Types of code</h2>
+<p>Code can be broadly divided into two types: human and machine-readable.</p>
 <p>Machine-readable code consists of binary instructions (a series of 1s and 0s) that can be processed by computers directly. Machine code is fast and efficient to execute but is difficult for humans to read and write.</p>
 <p>Assembly languages are low-level languages that are a step above machine-readable code. These languages are <em>somewhat</em> human-readable but are still much more difficult for humans to read than high-level languages.</p>
-<p>Languages like R, Python, JavaScript, and many others are high-level languages designed to be human-readable with syntax and grammar that imitate natural languages. All higher-level code must be translated into machine-readable code before the computer can run it.</p>
-</section>
-<section id="markup-languages" class="level2">
-<h2 class="anchored" data-anchor-id="markup-languages">Markup languages</h2>
-<p>A markup language is a <a href="https://en.wikipedia.org/wiki/Markup_language?oldformat=true">text-encoding system</a> for annotating a document with a set of symbols that are syntactically distinguishable from its text. Markup languages are not programming languages per se but refer to a set of characters or symbols you can insert at certain places in a text file to indicate how the style of the output document should look when it’s printed or displayed.</p>
-<section id="html" class="level3">
-<h3 class="anchored" data-anchor-id="html">HTML</h3>
-<p><code>HTML</code>, or Hypertext Markup Language, is the standard language used to structure content on the web and is a fundamental technology used in all websites.</p>
-<p><strong>Syntax</strong>: <code>HTML</code> <a href="https://www.w3schools.com/tags/">tags</a> denote different types of content. Tags are enclosed in angle brackets (<code>&lt;/&gt;</code>) and come in pairs to create <code>HTML</code> elements. The first tag in the pair is the start tag (<code>&lt;</code>), and the second tag is the end tag, which is the same as the start tag, but also includes a forward slash (<code>/&gt;</code>).</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;html&gt;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;head&gt;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;title&gt;</span>Title for page<span class="kw">&lt;/title&gt;</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/head&gt;</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;body&gt;</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;h1&gt;</span>This is a level 1 heading<span class="kw">&lt;/h1&gt;</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;p&gt;</span>This is the first paragraph.<span class="kw">&lt;/p&gt;</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;p&gt;</span>This is the second paragraph.<span class="kw">&lt;/p&gt;</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/body&gt;</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/html&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>The HTML document above has a basic structure that includes <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> tags:</p>
-<ul>
-<li><p>The document above begins with the <code>&lt;!DOCTYPE html&gt;</code>declaration to tells your browser application is an HTML5 document</p></li>
-<li><p>The <code>&lt;html&gt;</code>/<code>&lt;/html&gt;</code> tags enclose the entire document</p></li>
-<li><p>Inside <code>&lt;html&gt;</code>/<code>&lt;/html&gt;</code>, the <code>&lt;head&gt;</code>/<code>&lt;/head&gt;</code> elements contain meta-information about the document (<code>&lt;title&gt;</code>/<code>&lt;/title&gt;</code>), which is displayed in the browser’s title bar or tab.</p></li>
-<li><p>The <code>&lt;body&gt;</code>/<code>&lt;/body&gt;</code>element contains the actual content of the webpage (text, add images, create links, forms, embed audio, video, and other media, etc.)</p></li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled" title="Terms to know">
+<p>Languages like R, Python, JavaScript, and many others are high-level languages designed to be human-readable, with syntax and grammar that imitate natural languages. All higher-level code must be translated into machine-readable code before the computer can run it.</p>
+<section id="markup-languages" class="level3">
+<h3 class="anchored" data-anchor-id="markup-languages">Markup languages</h3>
+<p>A markup language is a human-readable <a href="https://en.wikipedia.org/wiki/Markup_language?oldformat=true">text-encoding system</a> used for describing the structure and format of web pages, documents, data, and configuration files.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Terms to know
+XML
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>HTML5</strong> is refers to the ‘<em>fifth and final major HTML version that is a World Wide Web Consortium recommendation</em>.’ <a href="https://en.wikipedia.org/wiki/HTML5?oldformat=true">Wikipedia</a></p>
+<p><code>XML</code> (e<code>X</code>tensible <code>M</code>arkup <code>L</code>anguage) is a self-describing, flexible markup langauge that uses <strong>tags</strong> to define a document structure.</p>
+<p><code>&lt;tag&gt;content&lt;/tag&gt;</code></p>
+<p>Tags are enclosed in angle brackets (<code>&lt;/&gt;</code>) and come in pairs to create elements. The first tag in the pair is the start tag (<code>&lt;</code>), and the second tag is the end tag, which is the same as the start tag, but also includes a forward slash (<code>/&gt;</code>).</p>
+<p>The first line in <code>XML</code> documents are the referred to as the ‘declaration.’</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">"1.0"</span><span class="ot"> encoding=</span><span class="st">"UTF-8"</span><span class="fu">?&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">note</span>&gt;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">to</span>&gt;Bob&lt;/<span class="kw">to</span>&gt;</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">from</span>&gt;Jane&lt;/<span class="kw">from</span>&gt;</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">heading</span>&gt;Reminder&lt;/<span class="kw">heading</span>&gt;</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">body</span>&gt;Don't forget to read your email!&lt;/<span class="kw">body</span>&gt;</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">note</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The <code>&lt;note&gt;</code>/<code>&lt;/note&gt;</code> is the root element, and all other tags are child elements. The key advantage of <code>XML</code> is you can easily see what each piece of data represents.</p>
 </div>
 </div>
-</section>
-<section id="markdown" class="level3">
-<h3 class="anchored" data-anchor-id="markdown">Markdown</h3>
-<p>Markdown is a ‘lightweight’ markup language for creating formatted text using a text editor. Markdown is primarily used to convert plain text into <code>HTML</code>, but it’s also used to format <code>README</code> files, and for writing messages in online discussion forums like <a href="https://stackoverflow.com/">Stack Overflow</a>.</p>
-<p><strong>Syntax</strong>:</p>
-<ul>
-<li>Headers from levels 1 to 6 can be created using a number of # symbols corresponding to the header level:
-<ul>
-<li><code># Header 1</code> for a first-level header</li>
-<li><code>## Header 2</code> for a second-level header, and so on.</li>
-</ul></li>
-<li>Asterisks (<code>*</code>) or underscores (<code>_</code>) are used for emphasis:
-<ul>
-<li><code>*italic*</code> or <code>_italic_</code> for italic<br>
-</li>
-<li><code>**bold**</code> or <code>__bold__</code>for bold<br>
-</li>
-<li>You can also combine them to create bold italic text like <code>***bold italic***</code> or <code>___bold italic___</code></li>
-</ul></li>
-<li>Unordered lists are creatd using asterisks, plus signs, or hyphens interchangeably (<code>*</code>, <code>+</code>, <code>-</code>)</li>
-</ul>
+<p>Markup languages are not programming languages per se, but refer to a set of characters or symbols you can insert at certain places in a text file to indicate how the style of the output document should look when it’s printed or displayed.</p>
+<p><a href="https://en.wikipedia.org/wiki/HTML?oldformat=true">HTML</a> (Hypertext Markup Language) provides the means to structure content on the web: structured documents to hold things like text, headings, paragraphs, lists, links, quotes, images, videos, etc.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+HTML
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>HTML</code>, or Hypertext Markup Language, is the standard language used to structure content on the web and is a fundamental technology used in all websites.</p>
+<p><a href="https://www.w3schools.com/tags/"><code>HTML</code> tags</a> denote different types of content. The HTML document below begins with the <code>&lt;!DOCTYPE html&gt;</code> declaration and <code>&lt;html&gt;</code>/<code>&lt;/html&gt;</code> enclose the entire document.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;html&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;head&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;title&gt;</span>Title for page<span class="kw">&lt;/title&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/head&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;body&gt;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;h1&gt;</span>This is a level 1 heading<span class="kw">&lt;/h1&gt;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;p&gt;</span>This is the first paragraph.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;p&gt;</span>This is the second paragraph.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/body&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/html&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Inside <code>&lt;html&gt;</code>/<code>&lt;/html&gt;</code>, the <code>&lt;head&gt;</code>/<code>&lt;/head&gt;</code> elements contain information about the document’s browser’s title bar or tab (<code>&lt;title&gt;</code>/<code>&lt;/title&gt;</code>). The actual content of the webpage (headings (<code>&lt;h1&gt;</code>/<code>&lt;/h1&gt;</code>), paragraphs (<code>&lt;p&gt;</code>/<code>&lt;/p&gt;</code>) are wrapped in <code>&lt;body&gt;</code>/<code>&lt;/body&gt;</code>.</p>
+</div>
+</div>
+<p>Markup languages annotate documents with a set of symbols that are syntactically distinguishable from its text. For example, <a href="https://en.wikipedia.org/wiki/Markdown?oldformat=true">Markdown</a> is primarily used to convert plain text into <code>HTML</code>, but it’s also used to format <code>README</code> files, and for writing messages in online discussion forums like <a href="https://stackoverflow.com/">Stack Overflow</a>.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Markdown
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Markdown is a ‘lightweight’ markup language for creating formatted text using a text editor. For example, headers can be created using a number of <code>#</code> symbols corresponding to the header level (<code># Header 1</code> = level 1 header, <code>## Header 2</code> = level 2 header, etc.). Additional examples are below:</p>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
-<section id="markdown-syntax" class="level5 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<h5 class="anchored" data-anchor-id="markdown-syntax"><em>Markdown syntax</em></h5>
-<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Item A</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Item B</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Item C</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="markdown-syntax" class="level6 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<h6 class="anchored" data-anchor-id="markdown-syntax">Markdown syntax</h6>
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>*italic* or _italic_ for italic</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>**bold** or __bold__ for bold </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>***bold italic***</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="rendered-html" class="level5 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<h5 class="anchored" data-anchor-id="rendered-html"><em>Rendered HTML</em></h5>
-<ul>
-<li>Item A</li>
-<li>Item B</li>
-<li>Item C</li>
-</ul>
+<section id="rendered-html" class="level6 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<h6 class="anchored" data-anchor-id="rendered-html">Rendered HTML</h6>
+<p><em>italic</em> or <em>italic</em> for italic<br>
+<strong>bold</strong> or <strong>bold</strong> for bold<br>
+<strong><em>bold italic</em></strong></p>
 </section>
 </div>
 </div>
-<ul>
-<li>Ordered lists are created using numbers followed by periods</li>
-</ul>
+<hr>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
-<section id="markdown-syntax-1" class="level4 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<h4 class="anchored" data-anchor-id="markdown-syntax-1"><em>Markdown syntax</em></h4>
-<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Item 1</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Item 2</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Item 3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="markdown-syntax-1" class="level6 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<h6 class="anchored" data-anchor-id="markdown-syntax-1">Markdown syntax</h6>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Item A   </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ss">    *   </span>Item A1      </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Item B      </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ss">    *   </span>Item B1  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="rendered-html-1" class="level4 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<h4 class="anchored" data-anchor-id="rendered-html-1"><em>Rendered HTML</em></h4>
+<section id="rendered-html-1" class="level6 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<h6 class="anchored" data-anchor-id="rendered-html-1">Rendered HTML</h6>
+<ul>
+<li>Item A
+<ul>
+<li>Item A1<br>
+</li>
+</ul></li>
+<li>Item B
+<ul>
+<li>Item B1</li>
+</ul></li>
+</ul>
+</section>
+</div>
+</div>
+<hr>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<section id="markdown-syntax-2" class="level6 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<h6 class="anchored" data-anchor-id="markdown-syntax-2">Markdown syntax</h6>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Item 1      </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Item 2      </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="rendered-html-2" class="level6 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<h6 class="anchored" data-anchor-id="rendered-html-2">Rendered HTML</h6>
 <ol type="1">
-<li>Item 1</li>
+<li>Item 1<br>
+</li>
 <li>Item 2</li>
-<li>Item 3</li>
 </ol>
 </section>
 </div>
 </div>
+</div>
+</div>
 </section>
+<section id="programming-languages" class="level3">
+<h3 class="anchored" data-anchor-id="programming-languages">Programming languages</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+R
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Python
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+JavaScript
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
 </section>
-<section id="yaml" class="level2">
-<h2 class="anchored" data-anchor-id="yaml">YAML</h2>
+<section id="other-languages" class="level3">
+<h3 class="anchored" data-anchor-id="other-languages">Other languages</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+YAML
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p><code>YAML</code> is a human-friendly, easily readable data serialization standard that can be used in conjunction with all programming languages.</p>
-</section>
-<section id="r" class="level2">
-<h2 class="anchored" data-anchor-id="r">R</h2>
-</section>
-<section id="python" class="level2">
-<h2 class="anchored" data-anchor-id="python">Python</h2>
-</section>
-<section id="javascript" class="level2">
-<h2 class="anchored" data-anchor-id="javascript">JavaScript</h2>
+</div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
