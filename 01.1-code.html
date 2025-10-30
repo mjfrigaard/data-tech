@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Science Technologies</title>
+<title>Code – Data Science Technologies</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,7 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./preface.html" rel="next">
+<link href="./01.2-data.html" rel="next">
+<link href="./intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -80,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Welcome</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01.1-code.html">Part I</a></li><li class="breadcrumb-item"><a href="./01.1-code.html">Code</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -107,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
   </div>
 </li>
@@ -134,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01.1-code.html" class="sidebar-item-text sidebar-link">
+  <a href="./01.1-code.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Code</span></a>
   </div>
 </li>
@@ -255,21 +290,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a>
+  <li><a href="#types-of-code" id="toc-types-of-code" class="nav-link active" data-scroll-target="#types-of-code">Types of code</a>
   <ul>
-  <li><a href="#book-outline" id="toc-book-outline" class="nav-link" data-scroll-target="#book-outline">Book outline</a>
-  <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#part-i" id="toc-part-i" class="nav-link" data-scroll-target="#part-i">Part I</a></li>
-  <li><a href="#part-ii" id="toc-part-ii" class="nav-link" data-scroll-target="#part-ii">Part II</a></li>
-  <li><a href="#part-iii" id="toc-part-iii" class="nav-link" data-scroll-target="#part-iii">Part III</a></li>
-  <li><a href="#part-iv" id="toc-part-iv" class="nav-link" data-scroll-target="#part-iv">Part IV</a></li>
-  <li><a href="#part-v" id="toc-part-v" class="nav-link" data-scroll-target="#part-v">Part V</a></li>
-  <li><a href="#part-vi" id="toc-part-vi" class="nav-link" data-scroll-target="#part-vi">Part VI</a></li>
-  <li><a href="#part-vii" id="toc-part-vii" class="nav-link" data-scroll-target="#part-vii">Part VII</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a></li>
-  </ul></li>
+  <li><a href="#markup-languages" id="toc-markup-languages" class="nav-link" data-scroll-target="#markup-languages">Markup languages</a></li>
+  <li><a href="#programming-languages" id="toc-programming-languages" class="nav-link" data-scroll-target="#programming-languages">Programming languages</a></li>
+  <li><a href="#other-languages" id="toc-other-languages" class="nav-link" data-scroll-target="#other-languages">Other languages</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -277,10 +302,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01.1-code.html">Part I</a></li><li class="breadcrumb-item"><a href="./01.1-code.html">Code</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Data Science Technologies</h1>
-<p class="subtitle lead">A Non-Technical Guide</p>
+<h1 class="title">Code</h1>
 </div>
 
 
@@ -297,96 +321,231 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="welcome" class="level1 unnumbered">
-<h1 class="unnumbered">Welcome</h1>
-<p>To ‘Data Science Technologies: A Non-Technical Guide’</p>
-<section id="book-outline" class="level2">
-<h2 class="anchored" data-anchor-id="book-outline">Book outline</h2>
-<section id="introduction" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="introduction">Introduction</h3>
-<p>The Data Science Ecosystem</p>
-<p><em>Importance and Relevance:</em> The rising importance of data science and why having mental models of these technologies matters.</p>
-<p><em>Everyday Impact:</em> How these technologies influence our everyday lives (social media, business, healthcare).</p>
+<p>Language is a technology that gives humans the ability to express ideas with precision. Natural languages like English or Spanish are used for a wide range of human communication, from slang terms in casual conversation to complex expressions of abstract ideas. Programming languages–<em>what is typically meant when someone refers to ‘code’</em>–are the arrangement of words, numbers, and/or symbols we use to communicate our intentions to a computer.</p>
+<p>Natural languages have a pragmatic quality that requires them to have high levels of redundancy. Redundancy helps us understand each other even when the rules of syntax are violated (i.e., when the same word can have different meanings in different contexts or when a sentence can have multiple valid interpretations).</p>
+<blockquote class="blockquote">
+<p><em>“The code that translates a web of conceptual relations in our heads into an early-to-late order in our mouths, or into a left-to-right order on the page, is called <strong>syntax</strong>…Different languages have different <strong>grammars</strong>, but they all convey conceptual relationships by modifying and arranging words.” - <a href="https://stevenpinker.com/publications/sense-style-thinking-persons-guide-writing-21st-century">The Sense of Style, Steven Pinker (2014)</a></em></p>
+</blockquote>
+<p>Programming languages require higher levels of precision than natural languages. Poorly written sentences can be painful to read or difficult to comprehend, but they don’t ruin an entire book. Computers are uncompromising when it comes to syntax: <strong>code must perfectly conform to the rules for syntax, grammar, and semantics before the code will work</strong>. Writing code is like writing a book where a single typo makes the entire text illegible.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Terms to know">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Terms to know
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Grammar</strong>: the rules for how a language uses symbols (words, numbers, symbols, punctuation, etc.).</p>
+<p><strong>Syntax</strong>: how to arrange words and phrases into sentences to create meaning.</p>
+<p><strong>Semantics</strong>: the meaning of words and sentences.</p>
+</div>
+</div>
+<section id="types-of-code" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-code">Types of code</h2>
+<p>Code can be broadly divided into two types: human and machine-readable.</p>
+<p>Machine-readable code consists of binary instructions (a series of 1s and 0s) that can be processed by computers directly. Machine code is fast and efficient to execute but is difficult for humans to read and write.</p>
+<p>Assembly languages are low-level languages that are a step above machine-readable code. These languages are <em>somewhat</em> human-readable but are still much more difficult for humans to read than high-level languages.</p>
+<p>Languages like R, Python, JavaScript, and many others are high-level languages designed to be human-readable, with syntax and grammar that imitate natural languages. All higher-level code must be translated into machine-readable code before the computer can run it.</p>
+<section id="markup-languages" class="level3">
+<h3 class="anchored" data-anchor-id="markup-languages">Markup languages</h3>
+<p>A markup language is a human-readable <a href="https://en.wikipedia.org/wiki/Markup_language?oldformat=true">text-encoding system</a> used for describing the structure and format of web pages, documents, data, and configuration files.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+XML
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>XML</code> (e<code>X</code>tensible <code>M</code>arkup <code>L</code>anguage) is a self-describing, flexible markup langauge that uses <strong>tags</strong> to define a document structure.</p>
+<p><code>&lt;tag&gt;content&lt;/tag&gt;</code></p>
+<p>Tags are enclosed in angle brackets (<code>&lt;/&gt;</code>) and come in pairs to create elements. The first tag in the pair is the start tag (<code>&lt;</code>), and the second tag is the end tag, which is the same as the start tag, but also includes a forward slash (<code>/&gt;</code>).</p>
+<p>The first line in <code>XML</code> documents are the referred to as the ‘declaration.’</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">"1.0"</span><span class="ot"> encoding=</span><span class="st">"UTF-8"</span><span class="fu">?&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">note</span>&gt;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">to</span>&gt;Bob&lt;/<span class="kw">to</span>&gt;</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">from</span>&gt;Jane&lt;/<span class="kw">from</span>&gt;</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">heading</span>&gt;Reminder&lt;/<span class="kw">heading</span>&gt;</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">body</span>&gt;Don't forget to read your email!&lt;/<span class="kw">body</span>&gt;</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">note</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The <code>&lt;note&gt;</code>/<code>&lt;/note&gt;</code> is the root element, and all other tags are child elements. The key advantage of <code>XML</code> is you can easily see what each piece of data represents.</p>
+</div>
+</div>
+<p>Markup languages are not programming languages per se, but refer to a set of characters or symbols you can insert at certain places in a text file to indicate how the style of the output document should look when it’s printed or displayed.</p>
+<p><a href="https://en.wikipedia.org/wiki/HTML?oldformat=true">HTML</a> (Hypertext Markup Language) provides the means to structure content on the web: structured documents to hold things like text, headings, paragraphs, lists, links, quotes, images, videos, etc.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+HTML
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>HTML</code>, or Hypertext Markup Language, is the standard language used to structure content on the web and is a fundamental technology used in all websites.</p>
+<p><a href="https://www.w3schools.com/tags/"><code>HTML</code> tags</a> denote different types of content. The HTML document below begins with the <code>&lt;!DOCTYPE html&gt;</code> declaration and <code>&lt;html&gt;</code>/<code>&lt;/html&gt;</code> enclose the entire document.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="dt">&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Title for page<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>This is a level 1 heading<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>This is the first paragraph.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>This is the second paragraph.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Inside <code>&lt;html&gt;</code>/<code>&lt;/html&gt;</code>, the <code>&lt;head&gt;</code>/<code>&lt;/head&gt;</code> elements contain information about the document’s browser’s title bar or tab (<code>&lt;title&gt;</code>/<code>&lt;/title&gt;</code>). The actual content of the webpage (headings (<code>&lt;h1&gt;</code>/<code>&lt;/h1&gt;</code>), paragraphs (<code>&lt;p&gt;</code>/<code>&lt;/p&gt;</code>) are wrapped in <code>&lt;body&gt;</code>/<code>&lt;/body&gt;</code>.</p>
+</div>
+</div>
+<p>Markup languages annotate documents with a set of symbols that are syntactically distinguishable from its text. For example, <a href="https://en.wikipedia.org/wiki/Markdown?oldformat=true">Markdown</a> is primarily used to convert plain text into <code>HTML</code>, but it’s also used to format <code>README</code> files, and for writing messages in online discussion forums like <a href="https://stackoverflow.com/">Stack Overflow</a>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Markdown
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Markdown is a ‘lightweight’ markup language for creating formatted text using a text editor. For example, headers can be created using a number of <code>#</code> symbols corresponding to the header level (<code># Header 1</code> = level 1 header, <code>## Header 2</code> = level 2 header, etc.). Additional examples are below:</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<section id="markdown-syntax" class="level6 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<h6 class="anchored" data-anchor-id="markdown-syntax">Markdown syntax</h6>
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>*italic* or _italic_ for italic</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>**bold** or __bold__ for bold </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>***bold italic***</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="part-i" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="part-i">Part I</h3>
-<p>Foundational Concepts in Computational Statistics</p>
-<p><em>1.1.</em> <em>Code</em></p>
-<p>Overview of common programming languages and how they’re used to communicate with machines and humans.</p>
-<p><em>1.2.</em> <em>Data</em></p>
-<p>Overview of data types, data sources, and how data is collected.</p>
-<p><em>1.3.</em> <em>Command Line Interface</em></p>
-<p>Introduction to CLI basics and its importance in data science.</p>
-<p><em>1.4.</em> <em>The Data Science Workflow</em></p>
-<p>Simplified explanation of the data science lifecycle from data collection to decision-making.</p>
+<section id="rendered-html" class="level6 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<h6 class="anchored" data-anchor-id="rendered-html">Rendered HTML</h6>
+<p><em>italic</em> or <em>italic</em> for italic<br>
+<strong>bold</strong> or <strong>bold</strong> for bold<br>
+<strong><em>bold italic</em></strong></p>
 </section>
-<section id="part-ii" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="part-ii">Part II</h3>
-<p>Data Storage and Retrieval</p>
-<p><em>2.1.</em> <em>Data Processing</em></p>
-<p>Common tasks for cleaning and transforming raw data.</p>
-<p><em>2.2</em> <em>Big Data</em></p>
-<p>Working with larger datasets using tools like Apache Hadoop, Spark, and SQL-based commands.</p>
-<p><em>3.3</em> <em>Data Storage</em></p>
-<p>Overview of file formats (CSV, JSON, Parquet) and database tools (SQL, NoSQL, and data lakes).</p>
+</div>
+</div>
+<hr>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<section id="markdown-syntax-1" class="level6 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<h6 class="anchored" data-anchor-id="markdown-syntax-1">Markdown syntax</h6>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Item A   </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ss">    *   </span>Item A1      </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Item B      </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ss">    *   </span>Item B1  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="part-iii" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="part-iii">Part III</h3>
-<p>Computational Analysis Tools</p>
-<p><em>3.1. Exploratory Data Analysis</em></p>
-<p>Leveraging visualization libraries (Matplotlib, Seaborn, ggplot2).</p>
-<p><em>3.2. Statistical Analysis with Python and R</em></p>
-<p>How to conduct descriptive and inferential analysis</p>
-<p><em>3.3. Machine Learning Libraries</em></p>
-<p>Overview of key machine learning tools (Scikit-learn, TensorFlow, Keras, caret).</p>
+<section id="rendered-html-1" class="level6 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<h6 class="anchored" data-anchor-id="rendered-html-1">Rendered HTML</h6>
+<ul>
+<li>Item A
+<ul>
+<li>Item A1<br>
+</li>
+</ul></li>
+<li>Item B
+<ul>
+<li>Item B1</li>
+</ul></li>
+</ul>
 </section>
-<section id="part-iv" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="part-iv">Part IV</h3>
-<p>Machine Learning in Practice</p>
-<p><em>4.1. Supervised Learning Algorithms</em></p>
-<p>Regression, classification, and decision trees using popular libraries.</p>
-<p><em>4.2. Unsupervised Learning Algorithms</em></p>
-<p>Clustering, dimensionality reduction, and topic modeling techniques</p>
-<p><em>4.3. Model Evaluation and Optimization</em></p>
-<p>Approaches for model selection, tuning, and validation.</p>
+</div>
+</div>
+<hr>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<section id="markdown-syntax-2" class="level6 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<h6 class="anchored" data-anchor-id="markdown-syntax-2">Markdown syntax</h6>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Item 1      </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Item 2      </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="part-v" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="part-v">Part V</h3>
-<p>Web Technologies</p>
+<section id="rendered-html-2" class="level6 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<h6 class="anchored" data-anchor-id="rendered-html-2">Rendered HTML</h6>
+<ol type="1">
+<li>Item 1<br>
+</li>
+<li>Item 2</li>
+</ol>
 </section>
-<section id="part-vi" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="part-vi">Part VI</h3>
-<p>Automation and Pipelines</p>
-<p><em>6.1. Scripting and Automation</em></p>
-<p>Basics of writing data workflows with Python, Bash, and command-line tools</p>
-<p><em>6.2. Pipeline Orchestration Tools</em></p>
-<p>Airflow, Luigi, and others for managing data pipelines.</p>
-<p><em>6.3. Deployment Strategies</em></p>
-<p>Creating automated deployment workflows using Docker, Kubernetes, and serverless architectures.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="part-vii" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="part-vii">Part VII</h3>
-<p>Putting It All Together</p>
-<p><em>7.1. Project Templates</em></p>
-<p>Step-by-step guide to designing and developing data science projects.</p>
-<p><em>7.2.</em> <em>Case Studies and Examples</em></p>
-<p>Real-world use cases demonstrating command-based data workflows.</p>
-<p><em>7.3. Beyond the Book</em></p>
-<p>Resources for exploring data science tools further (open-source projects, courses, blogs).</p>
+<section id="programming-languages" class="level3">
+<h3 class="anchored" data-anchor-id="programming-languages">Programming languages</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+R
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Python
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+JavaScript
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
 </section>
-<section id="conclusion" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="conclusion">Conclusion</h3>
-<p>The Future of Command-Based Data Science</p>
-<p><em>Emerging Trends:</em> What’s next in command-based data science and how it connects with the broader tech landscape.</p>
-<p><em>Practical Skills Roadmap:</em> How readers can continue building relevant skills and apply them to their own work.</p>
-</section>
-<section id="appendix" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="appendix">Appendix</h3>
-<p>A1. Glossary of Key Terms</p>
-<p>A2. Supplementary References for Deep-Dive Learning</p>
+<section id="other-languages" class="level3">
+<h3 class="anchored" data-anchor-id="other-languages">Other languages</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+YAML
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>YAML</code> is a human-friendly, easily readable data serialization standard that can be used in conjunction with all programming languages.</p>
+</div>
+</div>
 
 
-</section>
 </section>
 </section>
 
@@ -810,10 +969,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./preface.html" class="pagination-link" aria-label="Preface">
-        <span class="nav-page-text">Preface</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./01.2-data.html" class="pagination-link" aria-label="Data">
+        <span class="nav-page-text">Data</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
