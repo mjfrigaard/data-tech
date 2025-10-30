@@ -1,0 +1,186 @@
+# Code {.unnumbered}
+
+Language is a technology that gives humans the ability to express ideas with precision. Natural languages like English or Spanish are used for a wide range of human communication, from slang terms in casual conversation to complex expressions of abstract ideas. Programming languages--*what is typically meant when someone refers to 'code'*--are the arrangement of words, numbers, and/or symbols we use to communicate our intentions to a computer.
+
+Natural languages have a pragmatic quality that requires them to have high levels of redundancy. Redundancy helps us understand each other even when the rules of syntax are violated (i.e., when the same word can have different meanings in different contexts or when a sentence can have multiple valid interpretations).
+
+> *"The code that translates a web of conceptual relations in our heads into an early-to-late order in our mouths, or into a left-to-right order on the page, is called **syntax**...Different languages have different **grammars**, but they all convey conceptual relationships by modifying and arranging words." - [The Sense of Style, Steven Pinker (2014)](https://stevenpinker.com/publications/sense-style-thinking-persons-guide-writing-21st-century)*
+
+Programming languages require higher levels of precision than natural languages. Poorly written sentences can be painful to read or difficult to comprehend, but they don't ruin an entire book. Computers are uncompromising when it comes to syntax: **code must perfectly conform to the rules for syntax, grammar, and semantics before the code will work**. Writing code is like writing a book where a single typo makes the entire text illegible. 
+
+::: {.callout-important title="Terms to know"}
+
+**Grammar**: the rules for how a language uses symbols (words, numbers, symbols, punctuation, etc.).
+
+**Syntax**: how to arrange words and phrases into sentences to create meaning.
+
+**Semantics**: the meaning of words and sentences.
+
+:::
+
+## Types of code
+
+Code can be broadly divided into two types: human and machine-readable.
+
+Machine-readable code consists of binary instructions (a series of 1s and 0s) that can be processed by computers directly. Machine code is fast and efficient to execute but is difficult for humans to read and write. 
+
+Assembly languages are low-level languages that are a step above machine-readable code. These languages are *somewhat* human-readable but are still much more difficult for humans to read than high-level languages.
+
+Languages like R, Python, JavaScript, and many others are high-level languages designed to be human-readable, with syntax and grammar that imitate natural languages. All higher-level code must be translated into machine-readable code before the computer can run it.
+
+### Markup languages
+
+A markup language is a human-readable [text-encoding system](https://en.wikipedia.org/wiki/Markup_language?oldformat=true) used for describing the structure and format of web pages, documents, data, and configuration files.
+
+::: {.callout-note}
+
+#### XML
+
+ `XML` (e`X`tensible `M`arkup `L`anguage) is a self-describing, flexible markup langauge that uses **tags** to define a document structure. 
+
+`<tag>content</tag>`
+ 
+Tags are enclosed in angle brackets (`</>`) and come in pairs to create elements. The first tag in the pair is the start tag (`<`), and the second tag is the end tag, which is the same as the start tag, but also includes a forward slash (`/>`).
+
+The first line in `XML` documents are the referred to as the 'declaration.'
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<note>
+    <to>Bob</to>
+    <from>Jane</from>
+    <heading>Reminder</heading>
+    <body>Don't forget to read your email!</body>
+</note>
+```
+
+The `<note>`/`</note>` is the root element, and all other tags are child elements. The key advantage of `XML` is you can easily see what each piece of data represents.
+
+:::
+
+
+Markup languages are not programming languages per se, but refer to a set of characters or symbols you can insert at certain places in a text file to indicate how the style of the output document should look when it’s printed or displayed. 
+
+
+[HTML](https://en.wikipedia.org/wiki/HTML?oldformat=true) (Hypertext Markup Language) provides the means to structure content on the web:  structured documents to hold things like text, headings, paragraphs, lists, links, quotes, images, videos, etc.  
+
+::: {.callout-note}
+
+#### HTML
+
+`HTML`, or Hypertext Markup Language, is the standard language used to structure content on the web and is a fundamental technology used in all websites. 
+
+[`HTML` tags](https://www.w3schools.com/tags/) denote different types of content. The HTML document below begins with the `<!DOCTYPE html>` declaration and `<html>`/`</html>` enclose the entire document. 
+
+```HTML
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title for page</title>
+  </head>
+  <body>
+    <h1>This is a level 1 heading</h1>
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+  </body>
+</html>
+```
+
+Inside `<html>`/`</html>`, the `<head>`/`</head>` elements contain information about the document's browser's title bar or tab (`<title>`/`</title>`). The actual content of the webpage (headings (`<h1>`/`</h1>`), paragraphs (`<p>`/`</p>`) are wrapped in `<body>`/`</body>`.
+
+:::
+
+Markup languages annotate documents with a set of symbols that are syntactically distinguishable from its text. For example, [Markdown](https://en.wikipedia.org/wiki/Markdown?oldformat=true) is primarily used to convert plain text into `HTML`, but it's also used to format `README` files, and for writing messages in online discussion forums like [Stack Overflow](https://stackoverflow.com/).
+
+:::: {.callout-note}
+
+#### Markdown
+
+Markdown is a 'lightweight' markup language for creating formatted text using a text editor. For example, headers can be created using a number of `#` symbols corresponding to the header level (`# Header 1` = level 1 header, `## Header 2` = level 2 header, etc.). Additional examples are below: 
+
+::: {layout-ncol=2}
+
+###### Markdown syntax
+
+```Markdown
+*italic* or _italic_ for italic
+**bold** or __bold__ for bold 
+***bold italic***
+```
+
+###### Rendered HTML
+
+*italic* or _italic_ for italic   
+**bold** or __bold__ for bold   
+***bold italic***   
+:::
+
+---
+
+::: {layout-ncol=2}
+
+###### Markdown syntax
+
+```Markdown
+-   Item A   
+    *   Item A1      
+-   Item B      
+    *   Item B1  
+```
+
+###### Rendered HTML
+
+-   Item A   
+    *   Item A1      
+-   Item B      
+    *   Item B1  
+    
+:::
+
+---
+
+::: {layout-ncol=2}
+
+###### Markdown syntax
+    
+```Markdown
+1. Item 1      
+2. Item 2      
+```
+
+###### Rendered HTML
+
+1. Item 1            
+2. Item 2      
+
+:::
+
+::::
+
+### Programming languages
+
+:::: {.callout-note}
+#### R
+
+::::
+
+
+:::: {.callout-note}
+#### Python
+
+::::
+
+
+:::: {.callout-note}
+#### JavaScript
+
+::::
+
+### Other languages 
+
+:::: {.callout-note}
+#### YAML 
+
+`YAML` is a human-friendly, easily readable data serialization standard that can be used in conjunction with all programming languages.
+
+::::

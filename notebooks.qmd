@@ -1,7 +1,0 @@
-# Computational notebooks {.unnumbered}
-
-## Jupyter Notebooks 
-
-## R Markdown
-
-## Quarto

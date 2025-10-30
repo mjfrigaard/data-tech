@@ -1,3 +1,0 @@
-# R {.unnumbered}
-
-R is a 'functional, object-oriented programming language.'

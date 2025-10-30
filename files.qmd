@@ -1,3 +1,0 @@
-# Code files {.unnumbered}
-
-Open-source code is written in plain text files. 

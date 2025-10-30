@@ -1,11 +1,13 @@
 # Preface {.unnumbered}
 
-This book is focused on computational tools for working with data. Data science is a rapidly evolving field, so in many ways, this text is an attempt to capture whatever 'best practices' can be codified or generalized.  
+## Who should read this book?
 
-The topics include coding languages, computational documents, data storage and file formats, version control systems, and general computer science topics.
+This book assumes the audience has no prior programming or computer experience, aside from using a keyboard and mouse to open files and folders. It's especially suitable for anyone lacking confidence in their computer literacy.
 
-This text emphasizes using open-source tools that require typing code on a keyboard (rather than using a mouse to point and click).
+It's contents should serve as a quick start on unfamiliar topics, even for experienced data scientists, software engineers, etc., as long as the reader is not offended by overly simplified explanations of familiar material.
 
-This book was written in Quarto (learn more about [Quarto books](https://quarto.org/docs/books)).
+I've found having general knowledge of the topics in this book has made it easier to talk to experts and understand key issues, so I also hope it will be helpful for a wider audience.
+
+
 
 

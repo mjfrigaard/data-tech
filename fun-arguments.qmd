@@ -1,3 +1,0 @@
-# Arguments {.unnumbered}
-
-Function arguments can be

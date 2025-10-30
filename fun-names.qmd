@@ -1,3 +1,0 @@
-# Names {.unnumbered}
-
-Naming your functions should...

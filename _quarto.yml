@@ -2,43 +2,50 @@ project:
   type: book
 
 book:
-  title: "Data Technologies"
-  subtitle: "Computational tools for working with data"
-  author: "Martin Frigaard"
-  date: "2023-06-07"
+  title: "Data Science Technologies"
+  subtitle: 'A Non-Technical Guide'
+  page-footer:
+    left: |
+      Data Science Technologies was written by Martin Frigaard
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
   chapters:
   - index.qmd
   - preface.qmd
   - intro.qmd
-  - part: "Code"
+  - part: "Part I"
     chapters: 
-        - code.qmd
-        - files.qmd
-        - command-line.qmd
-        - regex.qmd
-        - notebooks.qmd
-  - part: "Object-oriented programming"
+        - 01.1-code.qmd
+        - 01.2-data.qmd
+        - 01.3-command-line.qmd
+        - 01.4-ds-workflow.qmd
+  - part: "Part II"
     chapters: 
-        - oop-basics.qmd
-        - oop-in-r.qmd
-        - oop-in-python.qmd
-  - part: "Functions"
+        - 02.1-data-processing.qmd
+        - 02.2-big-data.qmd
+        - 02.3-data-storage.qmd
+  - part: "Part III"
     chapters:
-      - fun-names.qmd
-      - fun-arguments.qmd
-      - fun-structure.qmd
-      - fun-environments.qmd
+      - 03.1-eda.qmd
+      - 03.2-statistics.qmd
+      - 03.3-machine-learning.qmd
+  - part: "Part IV"
+    chapters:
+      - 04.1-supervised-learning.qmd
+      - 04.2-unsupervised-learning.qmd
+      - 04.3-model-optimization.qmd
   
 
-bibliography: references.bib
+#bibliography: references.bib
 
-callout-icon: false
+callout-icon: true
 
 format:
   html:
-    theme: simplex
-  pdf:
-    documentclass: scrreprt
+    theme: flatly
+    toc: true
+    toc-depth: 4
+    toc-expand: true
 
 execute:
   freeze: auto

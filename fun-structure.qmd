@@ -1,3 +1,0 @@
-# Structure {.unnumbered}
-
-Function structure refers to...
