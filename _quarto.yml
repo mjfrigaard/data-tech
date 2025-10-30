@@ -2,11 +2,11 @@ project:
   type: book
 
 book:
-  title: "Data Science Technologies"
+  title: "Data Technologies"
   subtitle: 'A Non-Technical Guide'
   page-footer:
     left: |
-      Data Science Technologies was written by Martin Frigaard
+      Data Technologies was written by Martin Frigaard
     right: |
       This book was built with <a href="https://quarto.org/">Quarto</a>.
   chapters:

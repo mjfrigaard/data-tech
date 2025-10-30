@@ -6,15 +6,15 @@ editor:
 
 # Welcome {.unnumbered}
 
-To 'Data Science Technologies: A Non-Technical Guide'
+To 'Data Technologies: A Non-Technical Guide'
 
 ## Book outline
 
 ### Introduction  {.unnumbered}
 
-The Data Science Ecosystem
+The Data Ecosystem
 
-*Importance and Relevance:* The rising importance of data science and why having mental models of these technologies matters. 
+*Importance and Relevance:* The rising importance of data and why having mental models of these technologies matters. 
 
 *Everyday Impact:* How these technologies influence our everyday lives (social media, business, healthcare).
 
